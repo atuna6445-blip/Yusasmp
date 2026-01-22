@@ -1,0 +1,144 @@
+/* GENEL AYARLAR */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #8e44ad, #9b59b6);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* GRADIENT ANİMASYONU */
+@keyframes gradientBG {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+/* AUTH EKRANI */
+.auth-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.auth-screen h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.auth-form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.auth-form.show {
+  opacity: 1;
+}
+
+/* INPUT */
+.auth-form input {
+  width: 250px;
+  padding: 15px 20px;
+  border-radius: 25px; /* silindir */
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: rgba(255,255,255,0.15);
+  color: white;
+  transition: 0.3s;
+}
+
+.auth-form input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.auth-form input:focus {
+  background-color: rgba(255,255,255,0.3);
+}
+
+/* BUTON */
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e68900;
+  transform: scale(1.1);
+}
+
+/* Geri Butonu */
+.backBtn {
+  background-color: #607d8b;
+}
+
+.backBtn:hover {
+  background-color: #455a64;
+}
+
+/* ANA SITE */
+#mainSite {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#mainSite.show {
+  opacity: 1;
+}
+
+#mainSite h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#mainSite p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+body {
+  background: -webkit-linear-gradient(135deg, #1e3c72, #2a5298, #8e44ad, #9b59b6);
+  background: -moz-linear-gradient(135deg, #1e3c72, #2a5298, #8e44ad, #9b59b6);
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #8e44ad, #9b59b6);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBG 15s ease infinite;
+  -moz-animation: gradientBG 15s ease infinite;
+  animation: gradientBG 15s ease infinite;
+}
+
+@-webkit-keyframes gradientBG {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+@-moz-keyframes gradientBG {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+@keyframes gradientBG {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
